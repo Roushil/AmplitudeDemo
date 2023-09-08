@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StartupController" customModule="AmplitudeDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s77-Ph-PLm">
+                    <rect key="frame" x="214" y="128" width="52" height="16"/>
+                    <buttonCell key="cell" type="bevel" title="Hi there" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="f1F-LO-0qh">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onHiClick:" target="-2" id="QJx-ov-9om"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bNf-jA-j0N">
+                    <rect key="frame" x="165" y="81" width="150" height="32"/>
+                    <buttonCell key="cell" type="push" title="Clcik for new event" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ysc-By-R80">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onSecondClick:" target="-2" id="Byr-Gl-tcV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bNf-jA-j0N" firstAttribute="top" secondItem="s77-Ph-PLm" secondAttribute="bottom" constant="20" id="2j7-6O-5H2"/>
+                <constraint firstItem="s77-Ph-PLm" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="7X5-Ca-fUc"/>
+                <constraint firstItem="s77-Ph-PLm" firstAttribute="centerX" secondItem="bNf-jA-j0N" secondAttribute="centerX" id="hNM-pP-PPc"/>
+                <constraint firstItem="s77-Ph-PLm" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="iPr-bQ-Puc"/>
+            </constraints>
+            <point key="canvasLocation" x="44" y="144"/>
+        </customView>
+    </objects>
+</document>
